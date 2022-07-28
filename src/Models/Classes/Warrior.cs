@@ -17,12 +17,7 @@ class Warrior : Character
         this.Attack *= _attackMultiplier;
     }
 
-    public override void UseAbilityOnTarget(Character target) {
-        if (target.Health > 0)
-        {
-            target.Health -= (this.Attack - target.Defense);
-        }
-    }
+    public override void UseAbilityOnTarget(Character target, double bonus = 0.0) { }
 
-    public override void UseAreaAbility(List<Character> targets) { }
+    public override void UseAreaAbility(List<Character> targets, double bonus = 0.0) { }
 }

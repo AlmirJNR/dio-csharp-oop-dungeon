@@ -44,7 +44,7 @@ abstract class Character : Attributes
     public void DamageTarget(Character target, double bonus = 0.0)
     {
         if (target.Health > 0)
-        {   
+        {
             var attackDamage = (this.Attack + bonus) - target.Defense;
             target.Health -= attackDamage;
 
@@ -54,7 +54,6 @@ abstract class Character : Attributes
         }
     }
 
-    public abstract void UseAbilityOnTarget(Character target);
-
-    public abstract void UseAreaAbility(List<Character> targets);
+    public abstract void UseAbilityOnTarget(Character target, double bonus = 0.0);
+    public abstract void UseAreaAbility(List<Character> targets, double bonus = 0.0);
 }

@@ -11,9 +11,9 @@ var party = new List<Character>
     new Healer("Vitoria"),
 };
 
-foreach (var hero in party)
+for (int i = 0; enemy.Health > 0; i++)
 {
-    hero.DamageTarget(enemy);
+    party[i].DamageTarget(enemy);
     Console.WriteLine();
 }
 

@@ -17,7 +17,7 @@ class Healer : Character
         this.Attack *= _attackMultiplier;
     }
 
-    public override void UseAbilityOnTarget(Character target) { }
+    public override void UseAbilityOnTarget(Character target, double bonus = 0.0) { }
 
-    public override void UseAreaAbility(List<Character> targets) { }
+    public override void UseAreaAbility(List<Character> targets, double bonus = 0.0) { }
 }
